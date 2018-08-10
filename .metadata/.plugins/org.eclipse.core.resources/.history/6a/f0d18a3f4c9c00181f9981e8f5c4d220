@@ -1,0 +1,14 @@
+package pers.song.demo.controller;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@Controller
+public class TestController {
+	
+	@RequestMapping(value = "/hello",produces = "text/plain;charset=UTF-8")
+	public String testIndex(){
+		return "2ed Hello!";
+	}
+}
