@@ -1,0 +1,5 @@
+package pers.song.demo.service;
+
+public interface TestService {
+
+}

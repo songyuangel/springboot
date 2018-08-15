@@ -1,15 +1,17 @@
 package pers.song.demo;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
+@SpringBootApplication(scanBasePackages={"pers.*.*"})
 @RestController
+@MapperScan("pers.song.demo.dao")
 public class SpringBootBaseApplication {
-
+//exclude = DataSourceAutoConfiguration.class
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootBaseApplication.class, args);
 	}

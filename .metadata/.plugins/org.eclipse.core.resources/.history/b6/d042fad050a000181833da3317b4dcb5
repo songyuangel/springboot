@@ -1,0 +1,14 @@
+package pers.song.demo.service.impl;
+
+import pers.song.demo.entity.t_user;
+import pers.song.demo.service.TestService;
+
+public class TestServiceImpl implements TestService {
+
+	@Override
+	public t_user findTuser(Long id) {
+		// TODO 自动生成的方法存根
+		return null;
+	}
+
+}
